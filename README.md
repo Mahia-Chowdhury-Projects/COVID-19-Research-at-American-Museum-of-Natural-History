@@ -1,2 +1,36 @@
 # COVID-19-Research-at-American-Museum-of-Natural-History
-These files contain examined CDC public data sets. Files contain various data visualizations, including bar graphs, choropleth maps, and line plots, using Python to investigate trends in COVID-19 mortality rates, positivity rates, and vaccination rates. Additionally, some plots utilize object oriented programming and machine learning techniques to predict U.S. COVID-19 cases and mortality over time. Such data was displayed on a website created with HTML5 and CSS, with the addition of an IBM Watson chatbot that provides users with basic COVID-19 information, including safety precautions. The findings were presented at a symposium attended by public health researchers at the American Museum of Natural History. 
+# PROJECT PURPOSE
+Our project's mission is to...
+- Gain an epidemiological understanding of the pandemic using live datasets from accredited sources.
+
+- Promote healthy social habits, and spread awareness of risk factors and symptoms associated with COVID-19.
+
+- Learn and practice good principles of ethics for computer science in the real world.
+
+- Create a platform that can serve as a tool and COVID-19 information reserve, available to the public
+
+# PROJECT FEATURES
+- Choropleth_positivity_rates
+- covid19_choropleth
+- covid-19 chatbot: A chatbot built using IBM Watson that informs the user and answers covid-19 related questions. 
+
+# LANGUAGE 
+- We use mostly Python 3 for our project. Python is a high-level programming language with a wide range of uses, making it ideal for what we plan to do. In the future, we plan to use HTML and CSS in creating a website to host our findings.
+
+# SOURCES 
+- OWID
+ * We utilized a [csv file](https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv) from the *Our World in Data Repository*. This data updates depending on when the countries provide them. 
+ * OWID uses reliable data from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) to provide data like cases, death, postitivity rates and more. 
+# CONTRIBUTORS
+- Nyla A, Mahia C, Lin F, Chigozirim I, Dina N, Florianny N
+- Special thanks to Carol P!
+# TECHNOLOGIES 
+  ## Source code editor: 
+  - Visual Studio Code 
+  ## Python Libraries:
+  - matplotlib → specifically matplotlib.pyplot
+  - numpy
+  - pandas
+  - plotly → specifically plotly.express and plotly.graph_objects
+  ## Tool for collaboration:
+  - Github 
