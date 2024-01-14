@@ -1,0 +1,104 @@
+cards {
+    /* background-color:salmon; */
+    display:flex; 
+    flex-direction: column;
+    /* Use flexbox property to center the items on the vertical column axis */
+    align-items: start;
+     /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-content: space-around; */
+    border-bottom: 5px solid white;
+    
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+}
+.card1, .card2, .card3, .card4, .card5 {
+     /* background-color: green;  */
+    /* Repetitive code */
+    /* background-size:contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: auto; */
+    /* width: 30%; */
+    /* height: 300px; */
+    /* justify-content: center; */
+    display:flex; 
+    flex-direction: row;
+    /* Use flexbox property to center the items on the vertical column axis */
+    align-items: flex-start;
+     /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-content: space-around; */
+    border-bottom: 5px solid white;
+    /* padding-left: 5%; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 60px ;
+    padding-right: 100px ;
+    padding-top:60px ;
+    padding-bottom: 100px;
+    text-align: start;
+    border:white;
+    /* text-align:justify; */
+    
+
+}
+
+
+
+
+.cards img {
+    /* Required in order to center, must be block element */
+    display: block; 
+    height: 20rem;
+    width: 35rem;
+    /*margin: auto;*/
+
+
+}
+
+.image-text {
+    /* background-color: yellow; */
+    margin-left: 100px;
+    width: 500px;
+    height: 300px;
+    /* margin-top: -500px; */
+
+
+}
+
+.card1 img {
+    height: 200px ;
+    width: 400px;
+
+
+}
+
+.card2 img {
+    /* height: ; */
+    width: 700px ;
+
+}
+
+.card4 img {
+    /* height: ; */
+    width: 700px;
+}
+
+.cards h2 {
+    text-align: center;
+
+
+
+}
+
+.cards h3 {
+    text-align: center;
+
+
+}
+
+.cards h4 {
+    /*padding-left: 50% ;*/
+    margin-top: 50px;
+
+

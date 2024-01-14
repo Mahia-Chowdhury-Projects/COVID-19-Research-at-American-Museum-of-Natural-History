@@ -1,0 +1,31 @@
+
+
+.main-content li { 
+    list-style-type: circle;
+}
+
+.main-content h1 {
+    /* margin-left: 38%; */
+    margin-bottom: 80px;
+}
+
+.main-content h2 {
+    margin-left: 30%;
+}
+
+.main-content p{
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
+
+
+.main-content ul {
+    list-style-type: none;
+    
+}
+
+
+footer {
+    justify-content:center;
+}

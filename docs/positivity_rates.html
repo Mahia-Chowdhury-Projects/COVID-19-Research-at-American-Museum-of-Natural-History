@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EXPLORING COVID-19 project site.">
+        <title>Exploring COVID-19 | Covid-19 Positivity Rates Overtime</title>
+        <link rel="stylesheet" href="./index.css" />
+        <link rel = "stylesheet" href = "./visualizations.css"/>
+        <link rel="stylesheet" href="./dedicated_visualizations.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+        
+        <link rel="shortcut icon" href="favicon.ico" type="./images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body>
+        <!---This is the bar at the top of the page with the team name and our names-->
+        <div class = "bar-over-nav"> 
+            <h1>COVIDebuggers</h1>
+            <h2>Chigozirim (ChiChi) I., Dina N., Florianny N., Lin F., Mahia C., Nyla A</h2>
+            <h1 class = "project-name">Exploring COVID-19</h1>
+        </div>
+
+        <!---This is the navigation bar-->
+        <div class = "nav-bar">
+            <a href = "./index.html">Purpose</a>
+            <a href = "./visualizations.html">Visualizations</a>
+            <a href = "./timeline.html">Timeline</a>
+            <a href = "./chatbot.html">Chatbot</a>
+            <a href = "./about.html">About Us</a>
+            <a href = "./goals.html">Future Goals</a>
+        </div>
+
+        
+        <div class="main-content">
+            <h1 class="title">Covid-19 Positivity Rates Overtime</h1>
+
+            <div class = "explanation">
+                <img src = "./images/visualizations/positivity_rates/1_positivity_fileStructure.png">
+                <p>We created two files in the "choroplet_positivity_rates" directory: the main file (Animated_main.py) and the module (global_positivity_rates.py).</p>
+            </div>
+
+            <div class = "explanation">
+                <img src = "./images/visualizations/positivity_rates/2_positivity_importedLibraries.png">
+                <p>At the top of the module file, Pandas was imported as well as Plotly Express and Numpy. Pandas was used to read in our raw data as a dataframe and filter it. We made use of its .read_csv() and .fillna() methods. Plotly Express enabled us to use Plotly's animation feature so that users can view the dates across different periods in time. Plotly Express allowed us to do this in simpler, higher-level syntax. Numpy gave us access to .isnan(), a method that helped us detect the presence of the NaN data type in our dataframe.</p>
+            </div>
+
+            <div class = "explanation">
+                <img src="./images/visualizations/positivity_rates/3_positivity_datafilterFunction.png">
+                <p>The first function we created in the module was the dataframe filter. We needed to make sure our data only had the positivity rate, location, and date columns because those were the only things we wanted to view on the map. We achieved this using the .loc attribute and the .copy() method.</p>
+            </div>
+
+            <div class = "explanation">
+                <img src="./images/visualizations/positivity_rates/4_positivity_animatedchoroplethFunction.png">
+                <p>The second function that was created in the module was responsible for using the filtered data to display the animated choropleth map.</p>
+            </div>
+
+            <div class = "explanation">
+                <img src="./images/visualizations/positivity_rates/5_positivity_animatedChoroplethPlotly.png">
+                <p> We created our figure using the .choropleth() method. The parameters we used contributed to the visual effectivity of the choropleth map. The color parameter set the color values of the positivity rates based on the date and the color_continuous_scale parameter set the color scale based on an array of hexadecimal values. We then used the .update_layout() method to make the map appear with blue coastlines.</p>
+            </div>
+
+            <div class = "explanation">
+                <img src="./images/visualizations/positivity_rates/6_positivity_mainFile.png">
+                <p> Finally, in the main file, the module was imported and the animatedChoroplethmap was called.</p>
+            </div>
+
+        </div>
+       
+        <!-- This is our footer-->
+        <footer>
+            <p>To request more information about the Brown Scholars program ➡️ </p>
+            <a href="mailto:bridgeupstem@amnh.org" target="_blank"><img src="./images/bridgeupstem_logo.png" alt="Email bridgeupstem@amnh.org"></a>
+        </footer>
+        
+    </body>
+</html>
+

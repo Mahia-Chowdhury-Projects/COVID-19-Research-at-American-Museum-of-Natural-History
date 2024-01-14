@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EXPLORING COVID-19 project site.">
+        <title>Exploring COVID-19 | Fully Vaccinated Model</title>
+        <link rel="stylesheet" href="./index.css" />
+        <link rel = "stylesheet" href = "./prediction_model.css"/>
+        <!-- <link rel = "stylesheet" href = "./visualizations.css"/> -->
+        <!-- <link rel="stylesheet" href="./dedicated_visualizations.css"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+        
+        <link rel="shortcut icon" href="favicon.ico" type="./images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body>
+        <!---This is the bar at the top of the page with the team name and our names-->
+        <div class = "bar-over-nav"> 
+            <h1>COVIDebuggers</h1>
+            <h2>Chigozirim (ChiChi) I., Dina N., Florianny N., Lin F., Mahia C., Nyla A</h2>
+            <h1 class = "project-name">Exploring COVID-19</h1>
+        </div>
+
+        <!---This is the navigation bar-->
+        <div class = "nav-bar">
+            <a href = "./index.html">Purpose</a>
+            <a href = "./visualizations.html">Visualizations</a>
+            <a href = "./timeline.html">Timeline</a>
+            <a href = "./chatbot.html">Chatbot</a>
+            <a href = "./about.html">About Us</a>
+            <a href = "./goals.html">Future Goals</a>
+        </div>
+         <!----Actual content-->
+         <div class = "main-content">
+            
+        </div>
+        
+        <main>
+            <!--<h1 class = "seaction"> Code</h1>-->
+
+            <div class = "cards">
+                <h2>Prediction Model Code</h2>
+                <h3>Filter Data Module</h3>
+                <div class = "card1">
+                    
+                    <img src="./images/visualizations/prediction_model/filter_library.png" alt="">
+                        <div class="image-text">
+                          <h4>Imports</h4>
+                          <p>For this module we first imported the Pandas library to read the OWID.</p>
+                        </div>
+                </div>
+                <div class = "card2">
+                    <img src="./images/visualizations/prediction_model/filter_function.png" alt="">
+                       <div class="image-text">
+                        <h4>U.S Vaccinated OWID Function</h4>
+                        <p> Process: We created the function US_vaccinated_OWID_filter which takes in a data frame and returns a new filtered data Frame. It makes use for the.loc operator to create the df_us datafile which contains data only from the U.S. We also renamed the column to be “ds”, and “y” because it was necessary for machine learning. 
+                        </p>
+                        <p>Challenge: A challenge we encountered was that some of the data values were nan values meaning it was not a number so we used the groupby() method to make sure there are no repeats in the data and we set dropna to true to drop all the nan values and replace them with 0. 
+                        </p>
+                       </div>
+
+                </div>
+                <h3>Prediction Model Module</h3>
+                <div class = "card3">
+                    <img src="./images/visualizations/prediction_model/prediction_libraries.png" alt=" ">
+                     <div class="image-text">
+                       <h4>Imports</h4>
+                       <p>For this project we imported prophet from fbprophet which is an open source software that we used for the forecast to make the predictions. We also used libraries like pandas, matplotlib, and numpy. We imported the module data filter which is where the US_vaccinated_OWID_filter was. And Finally we imported the API module which was a module where we requested an API of the constantly updated U.S population. </p>                    
+                     </div>
+                </div>
+                <div class = "card4">
+                    <img src="./images/visualizations/prediction_model/prediction_format.png" alt=" ">
+                     <div class="image-text">
+                       <h4>Format Forcast Function</h4>
+                       <p>Process: We made the format_forecast function to make a new data frame with the forecast values yhat which is just the predicted value. 
+                    </p>  
+                     </div>
+                    
+                
+                </div>
+                <div class = "card5">
+                    <img src="./images/visualizations/prediction_model/prediction_function.png" alt=" ">
+                     <div class="image-text">
+                       <h4>Vaccination Rate Prediction Funfction </h4>
+                       <p>Process: We made a function callled vaccination_rate_prediction which predicts the number of fully vaccinated people in a given number of days. One advantage of prophet is that it can have a maximum achievable value which is the cap. Here we specified that the max amount of fully vaccinated people could not be above the population size to make the predictions more accurate. </p>  
+
+                       <p> To make the predictions we instantiated a new Prophet object. Then we create a space to store future dataframe by creating future dates and we set the periods parameter to the number of days. And then we plotted the forecast and made a graph.</p>
+
+                       <p> Results & analysis: Due to recent events like the public’s distrust of vaccinations, health professionals and scientists believe that Covid-19 herd immunity will most likely not be attained and Covid-19 will just become a manageable treath like the flu. However, how small of a threat it is depends on the amount of vaccination. Therefore this model offers a view of a future where Covid-19 is more manageable. 
+                       </p>
+                     </div>
+                    
+
+                 </div>
+                    
+                </div>
+          
+        </main>
+  

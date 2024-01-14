@@ -1,0 +1,30 @@
+/* Positivity rates page */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 80%;
+}
+.explanation{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    
+    text-align: center;
+}
+.explanation img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75%;
+    width: 75%;
+   
+}
+.explanation p{
+    margin-left: 0%;
+}
+.title{
+    text-align: center;
+}

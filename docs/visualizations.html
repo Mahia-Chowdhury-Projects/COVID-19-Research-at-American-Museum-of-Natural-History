@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EXPLORING COVID-19 project site.">
+        <title>Exploring COVID-19 | Visualizations</title>
+        <link rel="stylesheet" href="./index.css" />
+        <link rel = "stylesheet" href = "./visualizations.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+        
+        <link rel="shortcut icon" href="favicon.ico" type="./images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    
+    <body>
+        <!---This is the bar at the top of the page with the team name and our names-->
+        <div class = "bar-over-nav"> 
+            <h1>COVIDebuggers</h1>
+            <h2>Chigozirim (ChiChi) I., Dina N., Florianny N., Lin F., Mahia C., Nyla A</h2>
+            <h1 class = "project-name">Exploring COVID-19</h1>
+        </div>
+
+        <!---This is the navigation bar-->
+        <div class = "nav-bar">
+            <a href = "./index.html">Purpose</a>
+            <a href = "#">Visualizations</a>
+            <a href = "./timeline.html">Timeline</a>
+            <a href = "./chatbot.html">Chatbot</a>
+            <a href = "./about.html">About Us</a>
+            <a href = "./goals.html">Future Goals</a>
+        </div>
+
+        <!---This is where the main content of the page goes-->
+        <div class = "main-content">
+            
+        </div>
+        
+        <main>
+            <h1 class = "topic">Visualizations</h1>
+
+            <div class = "cards">
+                <h2>Choropleth Maps</h2>
+
+                    <div class = "card1">
+                        <video src="./images/visualizations/Global_Positivity_rates_Video.mov" controls></video>
+                        <a href="./positivity_rates.html">
+                            <h4> Covid-19 Positivity Rates Overtime</h4>
+                            <p> This choropleth map displays Covid-19 positivity rate worldwide. Positivity rates are the percentage of all coronavirus tests performed that are actually positive. Public health officials rely on the results to track the state of the pandemic, and policymakers use this information to guide decisions on reopening schools and businesses.</p>
+                        </a>
+                    </div>
+
+                <div class = "card2">
+                    <img src="./images/visualizations/covid_death_numbers.png" title=" Choroleth map measuring Covid-19 Deaths in the United States for a specific date">
+                   <a href = "./choropleth.html">
+                        <h4> Number of Covid-19 Deaths</h4>
+                        <p> This map displays the number of deaths due to Covid-19 in all U.S States based on a date users input. As the colors get darker the deaths increase. </p>
+                    </a>
+                </div>
+
+                <div class = "card3">
+                    <img src="./images/visualizations/covid_fatality_rates.png" title=" Choropleth Map measuring the fatality rates in different U.S states for a specific date">
+                    <a href="./choropleth.html">
+                    <h4>Case-Fatality Rates</h4>
+                    <p>  This Map displays fatality rates for U.S states based on date a users input. Case fatalities are the proportion of deaths from a certain disease compared to the total number of people diagnosed with the disease.</p>    
+                </a>                
+                </div> 
+
+            </div>
+            
+            
+            <div class = "prediction-model">
+
+                <h2> Prediction Model</h2>
+                <div class = "card4">
+                    <img src="./images/visualizations/fully_vaccinated_prediction_plot_90days.png" title="Prediction model predicts full vaccinations in 90 days">
+                    <a href="./prediction_model.html">
+                        <h4> Fully Vaccinated Model</h4>
+                        <p> This graph predicts the number of fully vaccinated individuals based on the days given to the prediction function, in this case 90 days. This information can be used to predict when restriction will be lifted and deduce when it is safe to go outside </p>
+                    </a>
+                </div>
+
+            </div>
+           
+        </main>
+
+        <!-- This is our footer-->
+        <footer>
+            <p>To request more information about the Brown Scholars program ➡️ </p>
+            <a href="mailto:bridgeupstem@amnh.org" target="_blank"><img src="./images/bridgeupstem_logo.png" alt="Email bridgeupstem@amnh.org"></a>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,113 @@
+.cards {
+    /* background-color:salmon; */
+    display:flex; 
+    flex-direction: column;
+    /* Use flexbox property to center the items on the vertical column axis */
+    align-items: center;
+     /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-content: space-around; */
+    border-bottom: 5px solid white;
+    
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
+}
+.cards div {
+    /* background-color: lightgoldenrodyellow; */
+    /* Repetitive code */
+    /* background-size:contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: auto; */
+    /* width: 30%; */
+    /* height: 300px; */
+    /* justify-content: center; */
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border:white;
+    /* text-align:justify; */
+    
+
+}
+
+
+
+
+.cards img, .cards video{
+    /* Required in order to center, must be block element */
+    display: block; 
+    height: 35rem;
+    width: 65rem;
+    margin: auto;
+    
+
+}
+
+/* .card1 {
+    
+}
+
+.card2 {
+    background-image: url() ;
+}
+
+.card3 {
+    background-image: url("");
+}
+
+.card4 {
+    background-image: url("");
+}
+
+.card5 {
+    background-image: url("");
+} */
+
+
+
+.prediction-model { 
+    /* background-color: lightgray;         */
+    margin-top: 100px;
+    /* margin-right: 50px;
+    margin-left: 50px; */
+    text-align: center;
+    
+}
+
+.prediction-model h3 {
+    /* margin-left: 60px */
+    /* text-align: center; */
+
+}
+.prediction-model p {
+    /* margin-left: 60px */
+    /* text-align: center; */
+}
+.prediction-model h4 {
+    /* margin-left: 60px */
+ }
+
+
+
+
+ .card4 img {
+    /* Required in order to center, must be block element */
+    display: block; 
+    width: 60rem;
+    margin: auto;
+ }
+
+
+ .card4 p {
+     /* Center non-flexbox text under prediction model. */
+    margin-left: 30%;
+    margin-right: 30%;
+ }
+
+.card4 {
+    /* background-color: pink; */
+    /* padding-left: 30%;
+    padding-right: 30%; */
+}

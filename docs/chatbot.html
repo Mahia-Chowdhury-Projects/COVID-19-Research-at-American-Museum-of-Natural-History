@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EXPLORING COVID-19 project site.">
+        <title>Exploring COVID-19 | Chatbot</title>
+        <link rel="stylesheet" href="./index.css"/>
+        <link rel="stylesheet" href="./chatbot.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+        <link rel="shortcut icon" href="favicon.ico" type="./images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+     
+    <body>
+        <!---This is the bar at the top of the page with the team name and our names-->
+        <div class = "bar-over-nav"> 
+            <h1>COVIDebuggers</h1>
+            <h2>Chigozirim (ChiChi) I., Dina N., Florianny N., Lin F., Mahia C., Nyla A</h2>
+            <h1 class = "project-name">Exploring COVID-19</h1>
+        </div>
+        
+        <!---This is the navigation bar-->
+        <div class = "nav-bar">
+                    <a href = "./index.html">Purpose</a>
+                    <a href = "./visualizations.html">Visualizations</a>
+                    <a href = "./timeline.html">Timeline</a>
+                    <a href = "#">Chatbot</a>
+                    <a href = "./about.html">About Us</a>
+                    <a href = "./goals.html">Future Goals</a>
+        </div>
+
+        <!---This is where the main content of the page goes-->
+         <div class = "main-content">
+            <h1 class = "topic">Chatbot and More Information</h1>
+            <h2> General COVID-19 facts (as of June 2021)</h2>
+            <ul>
+                <li> Countries that were impacted the most from the COVID-19 outbreak were the US, Brazil, and India.</li> 
+                <li> There are about 3.5M total deaths worldwide from COVID-19 </li> 
+                <li> Black and brown communities experienced disproportionately higher rates of hospitilizations and deaths from COVID-19 </li> 
+                <li> There were about 170.7M confirmed cases of COVID-19 worldwide</li> 
+                <li> About 297M doses of the vaccine was given in the United States</li> 
+            </ul>
+         
+
+         <h2>What is the COVID-19 chatbot? What does it do? </h2>
+         <p>This chatbot was created to inform the user and answer specified questions about COVID-19. Using IB Watson the chatbot is automated to answer quetsions in a variety of inputs. It currently can answer questions relating to: 
+            <ul>
+                <li>Vaccination centers + availablity </li>
+                <li>Testing areas + types</li>
+                <li>Symptoms + what to do if you have symptoms</li>
+                <li>COVID-19 risk factors </li>
+                </ul>
+         </p>
+         
+
+         <h2>How-To</h2>
+         <p>Here are some prompts to get started with the COVID-19 chatbot:
+             <ul>
+                 <li>Do I have COVID-19?</li>
+                 <li>Where can I get tested for COVID-19?</li>
+                 <li>Am I at high risk for COVID-19?</li>
+                 <li>Where do I get the COVID-19 vaccine?</li>
+             </ul>
+         </p>
+    
+                <script class = "chatbot">
+                    window.watsonAssistantChatOptions = {
+                        integrationID: "734a3381-d7c0-40d2-85cd-78f88eb4e9d3", // The ID of this integration.
+                        region: "us-south", // The region your integration is hosted in.
+                        serviceInstanceID: "0ef7855c-d4c8-435f-84cc-cb8a813198d4", // The ID of your service instance.
+                        onLoad: function(instance) { instance.render(); }
+                      };
+                    setTimeout(function(){
+                      const t=document.createElement('script');
+                      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                      document.head.appendChild(t);
+                    });
+                  </script>   
+        </div>
+    
+        <!-- This is our footer-->
+        <footer>
+            <p>To request more information about the Brown Scholars program ➡️ </p>
+            <a href="mailto:bridgeupstem@amnh.org" target="_blank"><img src="./images/bridgeupstem_logo.png" alt="Email bridgeupstem@amnh.org"></a>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.intern-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-content:flex-start;
+    padding: 20px 10px 20px 10px;
+   
+}
+
+.intern-pictures {
+    /* background-color: yellow; */
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+
+.intern {
+    /* background-color: pink; */
+    width: 400px;
+}
+.intern img {
+    margin: 0 10% 0 10%;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 50px;
+}
+
+/* Center and resize Florianny's image so it's not stretched horizontally*/
+/* #florianny img { */
+    /* width: 11rem; */
+    /* margin: 0 10% 0 28%; */
+/* } */
+
+/* Center and resize Dina's image so it's not stretched vertically */
+#dina img {
+    height: 20rem;
+    margin: 10%;
+}
+
+h3 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.mentor {
+    display: block;
+    height: 25rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1000px 1000px 1000px 1000px;
+}
+
